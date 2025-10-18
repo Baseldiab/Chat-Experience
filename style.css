@@ -624,7 +624,7 @@ body {
 }
 
 
-.icon-button:hover {
+.icon_button:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -889,12 +889,12 @@ body {
   position: relative;
 }
 
-.chat-input-wrapper .icon-button {
+.chat-input-wrapper .icon_button {
   color: var(--text-secondary);
   background: transparent;
 }
 
-.chat-input-wrapper .icon-button:hover {
+.chat-input-wrapper .icon_button:hover {
   background: var(--surface);
   color: var(--text-primary);
 }

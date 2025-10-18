@@ -34,6 +34,19 @@ class ChatApp {
     this.chatToggle.addEventListener('click', () => this.openChat());
     this.closeChat.addEventListener('click', () => this.closeChat_handler());
     this.sendButton.addEventListener('click', () => this.sendMessage());
+
+    const heroChatButton = document.getElementById('heroChatButton');
+    const ctaChatButton = document.getElementById('ctaChatButton');
+    const demoButton = document.getElementById('demoButton');
+    if (heroChatButton) {
+      heroChatButton.addEventListener('click', () => this.openChat());
+    }
+    if (ctaChatButton) {
+      ctaChatButton.addEventListener('click', () => this.openChat());
+    }
+    if (demoButton) {
+      demoButton.addEventListener('click', () => this.openChat());
+    }
     this.messageInput.addEventListener('keypress', (e) => {
       if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
